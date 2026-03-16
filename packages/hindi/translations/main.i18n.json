@@ -8,6 +8,145 @@
   ],
   "version": "1.0.0",
   "contents": {
+    "vs/base/browser/ui/dialog/dialog": {
+      "dialogClose": "डायलॉग बंद करें",
+      "dialogErrorMessage": "त्रुटि",
+      "dialogInfoMessage": "जानकारी",
+      "dialogPendingMessage": "लंबित",
+      "dialogWarningMessage": "चेतावनी",
+      "ok": "ठीक है"
+    },
+    "vs/base/browser/ui/findinput/findInputToggles": {
+      "caseDescription": "केस मिलान करें",
+      "regexDescription": "रेगुलर एक्सप्रेशन उपयोग करें",
+      "wordsDescription": "पूरा शब्द"
+    },
+    "vs/base/browser/ui/inputbox/inputBox": {
+      "alertErrorMessage": "त्रुटि: {0}",
+      "alertInfoMessage": "जानकारी: {0}",
+      "alertWarningMessage": "चेतावनी: {0}"
+    },
+    "vs/base/browser/ui/keybindingLabel/keybindingLabel": {
+      "unbound": "अनबाउंड"
+    },
+    "vs/base/browser/ui/tree/abstractTree": {
+      "close": "बंद करें",
+      "filter": "फ़िल्टर",
+      "fuzzySearch": "फज़ी मिलान",
+      "not found": "कोई परिणाम नहीं मिला।",
+      "type to search": "खोजने के लिए टाइप करें"
+    },
+    "vs/base/common/actions": {
+      "submenu.empty": "(खाली)"
+    },
+    "vs/base/common/errorMessage": {
+      "error.defaultMessage": "एक अज्ञात त्रुटि हुई है। कृपया अधिक विवरण के लिए लॉग देखें।"
+    },
+    "vs/base/common/keybindingLabels": {
+      "ctrlKey": "Ctrl",
+      "shiftKey": "Shift",
+      "altKey": "Alt",
+      "cmdKey": "Cmd"
+    },
+    "vs/editor/browser/controller/textAreaHandler": {
+      "accessibilityOffAriaLabel": "संपादक अब सुलभ नहीं है। विकल्पों के लिए Alt+F1 दबाएं।"
+    },
+    "vs/editor/browser/widget/codeEditor/codeEditorWidget": {
+      "editorViewAccessibleLabel": "संपादक सामग्री",
+      "accessibilityHelpMessage": "सुलभता सहायता के लिए Alt+F1 दबाएं।"
+    },
+    "vs/editor/common/config/editorOptions": {
+      "accessibilitySupport.auto": "प्लेटफॉर्म API का उपयोग करके पता लगाएं कि स्क्रीन रीडर संलग्न है या नहीं",
+      "accessibilitySupport.off": "मान लें कि स्क्रीन रीडर संलग्न नहीं है",
+      "accessibilitySupport.on": "स्क्रीन रीडर के उपयोग के लिए अनुकूलित करें",
+      "fontFamily": "फ़ॉन्ट फैमिली को नियंत्रित करता है।",
+      "fontSize": "फ़ॉन्ट आकार पिक्सेल में नियंत्रित करता है।",
+      "lineHeight": "लाइन की ऊंचाई को नियंत्रित करता है।"
+    },
+    "vs/editor/contrib/find/browser/findWidget": {
+      "label.find": "खोजें",
+      "placeholder.find": "खोजें",
+      "label.previousMatchButton": "पिछला मेल",
+      "label.nextMatchButton": "अगला मेल",
+      "label.toggleSelectionFind": "चयन में खोजें",
+      "label.closeButton": "बंद करें",
+      "label.replace": "बदलें",
+      "placeholder.replace": "बदलें",
+      "label.replaceButton": "बदलें",
+      "label.replaceAllButton": "सभी बदलें",
+      "label.toggleReplaceButton": "बदलें टॉगल करें",
+      "title.matchesCountLimit": "केवल पहले {0} परिणाम हाइलाइट किए गए हैं, लेकिन सभी खोज और बदलें कार्य सभी परिणामों पर काम करते हैं।"
+    },
+    "vs/editor/contrib/gotoError/browser/gotoError": {
+      "markers.panel.title.problems": "समस्याएं",
+      "problems.title": "{1} की {0}"
+    },
+    "vs/platform/actions/browser/menuEntryActionViewItem": {
+      "titleAndKb": "{0} ({1})"
+    },
+    "vs/platform/configuration/common/configurationModels": {
+      "defaultConfiguration": "डिफ़ॉल्ट कॉन्फ़िगरेशन"
+    },
+    "vs/platform/list/browser/listService": {
+      "workbenchConfigurationTitle": "वर्कबेंच",
+      "keyboardNavigationSettingKey": "कीबोर्ड नेविगेशन की शैली को नियंत्रित करता है",
+      "keyboardNavigationSettingKey.simple": "सरल कीबोर्ड नेविगेशन हाइलाइट तत्वों पर केंद्रित करती है",
+      "keyboardNavigationSettingKey.highlight": "हाइलाइट कीबोर्ड नेविगेशन हाइलाइट तत्व पर केंद्रित करती है",
+      "keyboardNavigationSettingKey.filter": "फ़िल्टर कीबोर्ड नेविगेशन किसी भी तत्व को फ़िल्टर और छुपाएगी"
+    },
+    "vs/platform/theme/common/colorRegistry": {
+      "foreground": "समग्र अग्रभूमि रंग",
+      "disabledForeground": "अक्षम तत्वों के लिए समग्र अग्रभूमि रंग",
+      "errorForeground": "त्रुटि संदेशों के लिए समग्र अग्रभूमि रंग",
+      "descriptionForeground": "अतिरिक्त जानकारी प्रदान करने वाले विवरण पाठ के लिए अग्रभूमि रंग",
+      "iconForeground": "वर्कबेंच में आइकनों के लिए डिफ़ॉल्ट रंग"
+    },
+    "vs/workbench/browser/parts/editor/editorActions": {
+      "splitEditor": "संपादक विभाजित करें",
+      "splitEditorUp": "ऊपर संपादक विभाजित करें",
+      "splitEditorDown": "नीचे संपादक विभाजित करें",
+      "splitEditorLeft": "बाएं संपादक विभाजित करें",
+      "splitEditorRight": "दाएं संपादक विभाजित करें",
+      "moveEditorToNextGroup": "संपादक को अगले समूह में ले जाएं",
+      "moveEditorToPreviousGroup": "संपादक को पिछले समूह में ले जाएं"
+    },
+    "vs/workbench/browser/parts/editor/editorStatus": {
+      "singleSelectionRange": "लाइन {0}, कॉलम {1} ({2} चयनित)",
+      "singleSelection": "लाइन {0}, कॉलम {1}",
+      "multiSelectionRange": "{0} चयन ({1} वर्ण चयनित)",
+      "multiSelection": "{0} चयन"
+    },
+    "vs/workbench/browser/parts/activitybar/activitybarActions": {
+      "toggleActivityBar": "एक्टिविटी बार दृश्यता टॉगल करें"
+    },
+    "vs/workbench/browser/parts/titlebar/titlebarActions": {
+      "toggleMenuBar": "मेनू बार टॉगल करें"
+    },
+    "vs/workbench/contrib/debug/browser/debugActionViewItems": {
+      "debugToolBarBackground": "डीबग टूलबार पृष्ठभूमि रंग"
+    },
+    "vs/workbench/contrib/debug/browser/debugService": {
+      "snapshotObj": "केवल सीमित जानकारी एक बड़े ऑब्जेक्ट के लिए उपलब्ध है"
+    },
+    "vs/workbench/contrib/files/browser/fileActions": {
+      "newFile": "नई फ़ाइल...",
+      "newFolder": "नया फ़ोल्डर...",
+      "openFile": "फ़ाइल खोलें...",
+      "saveAll": "सभी सहेजें",
+      "compareWithSaved": "सहेजे गए के साथ तुलना करें",
+      "close": "संपादक बंद करें",
+      "closeAll": "सभी संपादक बंद करें"
+    },
+    "vs/workbench/contrib/files/browser/fileCommands": {
+      "openFileFolder": "खोलें...",
+      "saveAs": "इस रूप में सहेजें...",
+      "openWorkspace": "वर्कस्पेस खोलें..."
+    },
+    "vs/workbench/contrib/files/browser/views/explorerViewer": {
+      "confirmDelete": "क्या आप निश्चित रूप से '{0}' को हटाना चाहते हैं?",
+      "confirmDeleteMultiple": "क्या आप निश्चित रूप से इन {0} फ़ाइलों को हटाना चाहते हैं?",
+      "deleteButtonLabel": "हटाएं"
+    },
     "vs/workbench/contrib/welcome/gettingStarted": {
       "gettingStarted.welcome": "स्वागत है",
       "gettingStarted.newFile": "नई फ़ाइल",
@@ -16,17 +155,54 @@
     },
     "vs/workbench/contrib/files/browser": {
       "explorerViewletTitle": "एक्सप्लोरर",
-      "openEditorsTitle": "खुले संपादक"
+      "openEditorsTitle": "खुले संपादक",
+      "explorerSection": "फ़ाइलें एक्सप्लोरर अनुभाग"
     },
     "vs/workbench/browser/parts/editor": {
       "saveButton": "सहेजें",
-      "closeButton": "बंद करें"
+      "closeButton": "बंद करें",
+      "editorPane": "संपादक पैन"
+    },
+    "vs/workbench/contrib/search/browser/searchView": {
+      "search": "खोजें",
+      "replaceInFiles": "फ़ाइलों में बदलें",
+      "searchResultsLabel": "{0} में {1} परिणाम"
+    },
+    "vs/workbench/contrib/terminal/browser/terminal": {
+      "terminal": "टर्मिनल",
+      "newTerminal": "नया टर्मिनल",
+      "killTerminal": "सक्रिय टर्मिनल इंस्टेंस को समाप्त करें",
+      "toggleTerminal": "टर्मिनल टॉगल करें"
+    },
+    "vs/workbench/contrib/scm/browser/scmViewlet": {
+      "scm": "स्रोत नियंत्रण",
+      "scm.viewlet": "स्रोत नियंत्रण",
+      "hideRepository": "रिपॉज़िटरी छुपाएं",
+      "viewRepository": "रिपॉज़िटरी देखें"
+    },
+    "vs/workbench/contrib/extensions/browser/extensionsActions": {
+      "installAction": "इंस्टॉल करें",
+      "uninstallAction": "अनइंस्टॉल करें",
+      "enableAction": "सक्षम करें",
+      "disableAction": "अक्षम करें"
+    },
+    "vs/workbench/contrib/preferences/browser/preferences": {
+      "openSettings": "सेटिंग्स खोलें",
+      "openKeybindings": "कीबोर्ड शॉर्टकट खोलें"
+    },
+    "vs/workbench/services/editor/common/editorService": {
+      "compareLabels": "{0} ↔ {1}"
     },
     "vs/base/common": {
       "ok": "ठीक है",
       "cancel": "रद्द करें",
       "yes": "हाँ",
-      "no": "नहीं"
+      "no": "नहीं",
+      "open": "खोलें",
+      "close": "बंद करें",
+      "save": "सहेजें",
+      "discard": "त्यागें",
+      "dontSave": "सहेजें नहीं"
     }
   }
 }
