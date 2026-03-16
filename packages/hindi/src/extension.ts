@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 /**
  * Activates the Hindi Language Pack extension
  */
-export function activate(context: vscode.ExtensionContext): void {
+export function activate(_context: vscode.ExtensionContext): void {
   console.log('Hindi Language Pack is now active');
 }
 
