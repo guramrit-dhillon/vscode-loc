@@ -1,0 +1,44 @@
+{
+  "name": "@vscode-loc/punjabi",
+  "displayName": "Punjabi Language Pack for VS Code",
+  "description": "Language Pack for Punjabi (ਪੰਜਾਬੀ) - provides localized UI for VS Code",
+  "version": "1.0.0",
+  "publisher": "vscode-loc",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Language Packs"
+  ],
+  "contributes": {
+    "localizations": [
+      {
+        "languageId": "pa",
+        "languageName": "Punjabi",
+        "localizedLanguageName": "ਪੰਜਾਬੀ",
+        "translations": [
+          {
+            "id": "vscode",
+            "path": "./translations/main.i18n.json"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "clean": "rimraf dist out *.vsix",
+    "package": "npm run build && vsce package",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0",
+    "rimraf": "^5.0.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guramrit-dhillon/vscode-loc"
+  }
+}
