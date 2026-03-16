@@ -8,6 +8,12 @@
   ],
   "version": "1.0.0",
   "contents": {
+    "vs/base/browser/ui/actionbar/actionViewItems": {
+      "titleLabel": "{0} ({1})"
+    },
+    "vs/base/browser/ui/button/button": {
+      "button dropdown more actions": "अधिक क्रियाएँ..."
+    },
     "vs/base/browser/ui/dialog/dialog": {
       "dialogClose": "डायलॉग बंद करें",
       "dialogErrorMessage": "त्रुटि",
@@ -16,37 +22,115 @@
       "dialogWarningMessage": "चेतावनी",
       "ok": "ठीक है"
     },
+    "vs/base/browser/ui/dropdown/dropdownActionViewItem": {
+      "moreActions": "अधिक क्रियाएँ..."
+    },
+    "vs/base/browser/ui/findinput/findInput": {
+      "defaultLabel": "इनपुट"
+    },
     "vs/base/browser/ui/findinput/findInputToggles": {
       "caseDescription": "केस मिलान करें",
       "regexDescription": "रेगुलर एक्सप्रेशन उपयोग करें",
       "wordsDescription": "पूरा शब्द"
     },
+    "vs/base/browser/ui/findinput/replaceInput": {
+      "defaultLabel": "इनपुट",
+      "label.preserveCaseToggle": "केस को बनाए रखें"
+    },
+    "vs/base/browser/ui/hover/hoverWidget": {
+      "acessibleViewHint": "{0} के साथ सुलभ दृश्य में इसकी जांच करें।",
+      "acessibleViewHintNoKbOpen": "ओपन एक्सेसिबल व्यू कमांड के माध्यम से सुलभ दृश्य में इसकी जांच करें।"
+    },
     "vs/base/browser/ui/inputbox/inputBox": {
       "alertErrorMessage": "त्रुटि: {0}",
       "alertInfoMessage": "जानकारी: {0}",
-      "alertWarningMessage": "चेतावनी: {0}"
+      "alertWarningMessage": "चेतावनी: {0}",
+      "clearedInput": "इनपुट साफ़ किया गया"
     },
     "vs/base/browser/ui/keybindingLabel/keybindingLabel": {
       "unbound": "अनबाउंड"
     },
+    "vs/base/browser/ui/menu/menubar": {
+      "mAppMenu": "एप्लिकेशन मेनू",
+      "mMore": "अधिक"
+    },
+    "vs/base/browser/ui/selectBox/selectBoxCustom": {
+      "selectBox": "चयन बॉक्स"
+    },
+    "vs/base/browser/ui/splitview/paneview": {
+      "viewSection": "अनुभाग {0}"
+    },
+    "vs/base/browser/ui/toolbar/toolbar": {
+      "moreActions": "अधिक क्रियाएँ..."
+    },
     "vs/base/browser/ui/tree/abstractTree": {
       "close": "बंद करें",
       "filter": "फ़िल्टर",
-      "fuzzySearch": "फज़ी मिलान",
+      "foundResults": "{0} परिणाम",
+      "fuzzySearch": "फ़ज़ी मिलान",
       "not found": "कोई परिणाम नहीं मिला।",
+      "type to filter": "फ़िल्टर करने के लिए टाइप करें",
       "type to search": "खोजने के लिए टाइप करें"
     },
     "vs/base/common/actions": {
       "submenu.empty": "(खाली)"
     },
+    "vs/base/common/date": {
+      "date.fromNow.days.plural": "{0} दिन",
+      "date.fromNow.days.plural.ago": "{0} दिन पहले",
+      "date.fromNow.hours.plural": "{0} घंटे",
+      "date.fromNow.hours.plural.ago": "{0} घंटे पहले",
+      "date.fromNow.minutes.plural": "{0} मिनट",
+      "date.fromNow.minutes.plural.ago": "{0} मिनट पहले",
+      "date.fromNow.months.plural": "{0} महीने",
+      "date.fromNow.months.plural.ago": "{0} महीने पहले",
+      "date.fromNow.now": "अभी",
+      "date.fromNow.seconds.plural": "{0} सेकंड",
+      "date.fromNow.seconds.plural.ago": "{0} सेकंड पहले",
+      "date.fromNow.weeks.plural": "{0} सप्ताह",
+      "date.fromNow.weeks.plural.ago": "{0} सप्ताह पहले",
+      "date.fromNow.years.plural": "{0} वर्ष",
+      "date.fromNow.years.plural.ago": "{0} वर्ष पहले",
+      "today": "आज",
+      "yesterday": "कल"
+    },
     "vs/base/common/errorMessage": {
-      "error.defaultMessage": "एक अज्ञात त्रुटि हुई है। कृपया अधिक विवरण के लिए लॉग देखें।"
+      "error.defaultMessage": "एक अज्ञात त्रुटि हुई है। कृपया अधिक विवरण के लिए लॉग देखें।",
+      "error.moreErrors": "{0} ({1} कुल त्रुटियाँ)",
+      "nodeExceptionMessage": "एक सिस्टम त्रुटि हुई ({0})",
+      "stackTrace.format": "{0}: {1}"
+    },
+    "vs/base/common/jsonErrorMessages": {
+      "error.closeBraceExpected": "बंद ब्रेस की उम्मीद थी",
+      "error.closeBracketExpected": "बंद ब्रैकेट की उम्मीद थी",
+      "error.colonExpected": "कोलन की उम्मीद थी",
+      "error.commaExpected": "कॉमा की उम्मीद थी",
+      "error.endOfFileExpected": "फ़ाइल के अंत की उम्मीद थी",
+      "error.invalidNumberFormat": "अमान्य संख्या प्रारूप",
+      "error.invalidSymbol": "अमान्य प्रतीक",
+      "error.propertyNameExpected": "प्रॉपर्टी नाम की उम्मीद थी",
+      "error.valueExpected": "मान की उम्मीद थी"
     },
     "vs/base/common/keybindingLabels": {
+      "altKey": "Alt",
       "ctrlKey": "Ctrl",
       "shiftKey": "Shift",
-      "altKey": "Alt",
-      "cmdKey": "Cmd"
+      "cmdKey": "Cmd",
+      "windowsKey": "Windows",
+      "superKey": "Super"
+    },
+    "vs/base/common": {
+      "ok": "ठीक है",
+      "cancel": "रद्द करें",
+      "yes": "हाँ",
+      "no": "नहीं",
+      "open": "खोलें",
+      "close": "बंद करें",
+      "save": "सहेजें",
+      "discard": "त्यागें",
+      "dontSave": "सहेजें नहीं",
+      "apply": "लागू करें",
+      "help": "सहायता"
     },
     "vs/editor/browser/controller/textAreaHandler": {
       "accessibilityOffAriaLabel": "संपादक अब सुलभ नहीं है। विकल्पों के लिए Alt+F1 दबाएं।"
@@ -55,13 +139,23 @@
       "editorViewAccessibleLabel": "संपादक सामग्री",
       "accessibilityHelpMessage": "सुलभता सहायता के लिए Alt+F1 दबाएं।"
     },
+    "vs/editor/browser/widget/diffEditor/diffEditorWidget": {
+      "diff.clipboard.copyDeletedLineContent.label": "हटाई गई लाइन कॉपी करें",
+      "diff.clipboard.copyDeletedLinesContent.label": "हटाई गई लाइनें कॉपी करें"
+    },
     "vs/editor/common/config/editorOptions": {
       "accessibilitySupport.auto": "प्लेटफॉर्म API का उपयोग करके पता लगाएं कि स्क्रीन रीडर संलग्न है या नहीं",
       "accessibilitySupport.off": "मान लें कि स्क्रीन रीडर संलग्न नहीं है",
       "accessibilitySupport.on": "स्क्रीन रीडर के उपयोग के लिए अनुकूलित करें",
+      "autoClosingBrackets": "नियंत्रित करता है कि जब उपयोगकर्ता ओपनिंग ब्रैकेट जोड़ता है तो संपादक स्वचालित रूप से बंद ब्रैकेट जोड़ेगा या नहीं।",
+      "autoClosingQuotes": "नियंत्रित करता है कि जब उपयोगकर्ता ओपनिंग कोट जोड़ता है तो संपादक स्वचालित रूप से बंद कोट जोड़ेगा या नहीं।",
       "fontFamily": "फ़ॉन्ट फैमिली को नियंत्रित करता है।",
       "fontSize": "फ़ॉन्ट आकार पिक्सेल में नियंत्रित करता है।",
-      "lineHeight": "लाइन की ऊंचाई को नियंत्रित करता है।"
+      "lineHeight": "लाइन की ऊंचाई को नियंत्रित करता है।",
+      "lineNumbers": "लाइन नंबरों के रेंडरिंग को नियंत्रित करता है।",
+      "renderWhitespace": "नियंत्रित करता है कि संपादक व्हाइटस्पेस वर्णों को कैसे रेंडर करना चाहिए।",
+      "tabSize": "एक टैब के बराबर स्थानों की संख्या।",
+      "wordWrap": "नियंत्रित करता है कि लाइनों को कैसे लपेटा जाना चाहिए।"
     },
     "vs/editor/contrib/find/browser/findWidget": {
       "label.find": "खोजें",
@@ -75,11 +169,31 @@
       "label.replaceButton": "बदलें",
       "label.replaceAllButton": "सभी बदलें",
       "label.toggleReplaceButton": "बदलें टॉगल करें",
-      "title.matchesCountLimit": "केवल पहले {0} परिणाम हाइलाइट किए गए हैं, लेकिन सभी खोज और बदलें कार्य सभी परिणामों पर काम करते हैं।"
+      "title.matchesCountLimit": "केवल पहले {0} परिणाम हाइलाइट किए गए हैं, लेकिन सभी खोज और बदलें कार्य सभी परिणामों पर काम करते हैं।",
+      "title.matchesCount": "{1} की {0}",
+      "title.noResults": "कोई परिणाम नहीं"
     },
     "vs/editor/contrib/gotoError/browser/gotoError": {
       "markers.panel.title.problems": "समस्याएं",
-      "problems.title": "{1} की {0}"
+      "problems.title": "{1} की {0}",
+      "nextMarkerAction": "अगली समस्या पर जाएं",
+      "previousMarkerAction": "पिछली समस्या पर जाएं"
+    },
+    "vs/editor/contrib/comment/browser/comment": {
+      "comment.line": "लाइन कमेंट टॉगल करें",
+      "comment.block": "ब्लॉक कमेंट टॉगल करें"
+    },
+    "vs/editor/contrib/folding/browser/folding": {
+      "unfoldAction.label": "खोलें",
+      "unFoldRecursivelyAction.label": "पुनरावर्ती रूप से खोलें",
+      "foldAction.label": "फोल्ड करें",
+      "foldRecursivelyAction.label": "पुनरावर्ती रूप से फोल्ड करें",
+      "foldAllAction.label": "सभी फोल्ड करें",
+      "unfoldAllAction.label": "सभी खोलें"
+    },
+    "vs/editor/contrib/format/browser/formatActions": {
+      "formatDocument.label": "दस्तावेज़ को फॉर्मेट करें",
+      "formatSelection.label": "चयन को फॉर्मेट करें"
     },
     "vs/platform/actions/browser/menuEntryActionViewItem": {
       "titleAndKb": "{0} ({1})"
@@ -99,7 +213,15 @@
       "disabledForeground": "अक्षम तत्वों के लिए समग्र अग्रभूमि रंग",
       "errorForeground": "त्रुटि संदेशों के लिए समग्र अग्रभूमि रंग",
       "descriptionForeground": "अतिरिक्त जानकारी प्रदान करने वाले विवरण पाठ के लिए अग्रभूमि रंग",
-      "iconForeground": "वर्कबेंच में आइकनों के लिए डिफ़ॉल्ट रंग"
+      "iconForeground": "वर्कबेंच में आइकनों के लिए डिफ़ॉल्ट रंग",
+      "focusBorder": "फोकस किए गए तत्वों के लिए समग्र बॉर्डर रंग",
+      "contrastBorder": "अतिरिक्त कंट्रास्ट के लिए तत्वों के चारों ओर बॉर्डर",
+      "contrastActiveBorder": "अतिरिक्त कंट्रास्ट के लिए सक्रिय तत्वों के चारों ओर बॉर्डर"
+    },
+    "vs/platform/notification/common/notification": {
+      "infoNotification": "जानकारी",
+      "warnNotification": "चेतावनी",
+      "errorNotification": "त्रुटि"
     },
     "vs/workbench/browser/parts/editor/editorActions": {
       "splitEditor": "संपादक विभाजित करें",
@@ -108,13 +230,20 @@
       "splitEditorLeft": "बाएं संपादक विभाजित करें",
       "splitEditorRight": "दाएं संपादक विभाजित करें",
       "moveEditorToNextGroup": "संपादक को अगले समूह में ले जाएं",
-      "moveEditorToPreviousGroup": "संपादक को पिछले समूह में ले जाएं"
+      "moveEditorToPreviousGroup": "संपादक को पिछले समूह में ले जाएं",
+      "moveActiveEditor": "सक्रिय संपादक को ले जाएं",
+      "closeEditor": "संपादक बंद करें",
+      "closeAllEditors": "सभी संपादक बंद करें",
+      "closeOtherEditors": "अन्य संपादक बंद करें"
     },
     "vs/workbench/browser/parts/editor/editorStatus": {
       "singleSelectionRange": "लाइन {0}, कॉलम {1} ({2} चयनित)",
       "singleSelection": "लाइन {0}, कॉलम {1}",
       "multiSelectionRange": "{0} चयन ({1} वर्ण चयनित)",
-      "multiSelection": "{0} चयन"
+      "multiSelection": "{0} चयन",
+      "changeLangMode": "भाषा मोड बदलें",
+      "changeEncoding": "एन्कोडिंग बदलें",
+      "changeEOL": "लाइन एंडिंग सीक्वेंस बदलें"
     },
     "vs/workbench/browser/parts/activitybar/activitybarActions": {
       "toggleActivityBar": "एक्टिविटी बार दृश्यता टॉगल करें"
@@ -122,8 +251,23 @@
     "vs/workbench/browser/parts/titlebar/titlebarActions": {
       "toggleMenuBar": "मेनू बार टॉगल करें"
     },
+    "vs/workbench/browser/parts/editor": {
+      "saveButton": "सहेजें",
+      "closeButton": "बंद करें",
+      "editorPane": "संपादक पैन"
+    },
     "vs/workbench/contrib/debug/browser/debugActionViewItems": {
       "debugToolBarBackground": "डीबग टूलबार पृष्ठभूमि रंग"
+    },
+    "vs/workbench/contrib/debug/browser/debugActions": {
+      "startDebug": "डीबगिंग शुरू करें",
+      "stopDebug": "डीबगिंग रोकें",
+      "restartDebug": "डीबगिंग पुनः शुरू करें",
+      "stepOver": "स्टेप ओवर",
+      "stepInto": "स्टेप इनटू",
+      "stepOut": "स्टेप आउट",
+      "continueDebug": "जारी रखें",
+      "pauseDebug": "रोकें"
     },
     "vs/workbench/contrib/debug/browser/debugService": {
       "snapshotObj": "केवल सीमित जानकारी एक बड़े ऑब्जेक्ट के लिए उपलब्ध है"
@@ -135,17 +279,24 @@
       "saveAll": "सभी सहेजें",
       "compareWithSaved": "सहेजे गए के साथ तुलना करें",
       "close": "संपादक बंद करें",
-      "closeAll": "सभी संपादक बंद करें"
+      "closeAll": "सभी संपादक बंद करें",
+      "copyPath": "पथ कॉपी करें",
+      "copyRelativePath": "सापेक्ष पथ कॉपी करें",
+      "revealInExplorer": "एक्सप्लोरर में प्रकट करें",
+      "openContainingFolder": "समाहित फ़ोल्डर खोलें"
     },
     "vs/workbench/contrib/files/browser/fileCommands": {
       "openFileFolder": "खोलें...",
       "saveAs": "इस रूप में सहेजें...",
-      "openWorkspace": "वर्कस्पेस खोलें..."
+      "openWorkspace": "वर्कस्पेस खोलें...",
+      "saveWorkspaceAs": "वर्कस्पेस को इस रूप में सहेजें..."
     },
     "vs/workbench/contrib/files/browser/views/explorerViewer": {
       "confirmDelete": "क्या आप निश्चित रूप से '{0}' को हटाना चाहते हैं?",
       "confirmDeleteMultiple": "क्या आप निश्चित रूप से इन {0} फ़ाइलों को हटाना चाहते हैं?",
-      "deleteButtonLabel": "हटाएं"
+      "deleteButtonLabel": "हटाएं",
+      "confirmMoveTrashMessage": "क्या आप निश्चित रूप से '{0}' को कचरे में भेजना चाहते हैं?",
+      "confirmMoveTrashMessageMultiple": "क्या आप निश्चित रूप से इन {0} फ़ाइलों को कचरे में भेजना चाहते हैं?"
     },
     "vs/workbench/contrib/welcome/gettingStarted": {
       "gettingStarted.welcome": "स्वागत है",
@@ -158,51 +309,90 @@
       "openEditorsTitle": "खुले संपादक",
       "explorerSection": "फ़ाइलें एक्सप्लोरर अनुभाग"
     },
-    "vs/workbench/browser/parts/editor": {
-      "saveButton": "सहेजें",
-      "closeButton": "बंद करें",
-      "editorPane": "संपादक पैन"
-    },
     "vs/workbench/contrib/search/browser/searchView": {
       "search": "खोजें",
       "replaceInFiles": "फ़ाइलों में बदलें",
-      "searchResultsLabel": "{0} में {1} परिणाम"
+      "searchResultsLabel": "{0} में {1} परिणाम",
+      "searchWithoutFolderMessage": "खोजने के लिए आपको पहले एक फ़ोल्डर खोलना होगा",
+      "searchMaxResults": "ये केवल पहले {0} परिणाम हैं। सभी परिणाम देखने के लिए अपनी खोज को संकीर्ण करें।"
+    },
+    "vs/workbench/contrib/output/browser/output": {
+      "output": "आउटपुट",
+      "clearOutput.label": "आउटपुट साफ़ करें"
     },
     "vs/workbench/contrib/terminal/browser/terminal": {
       "terminal": "टर्मिनल",
       "newTerminal": "नया टर्मिनल",
       "killTerminal": "सक्रिय टर्मिनल इंस्टेंस को समाप्त करें",
-      "toggleTerminal": "टर्मिनल टॉगल करें"
+      "toggleTerminal": "टर्मिनल टॉगल करें",
+      "clear": "साफ़ करें",
+      "split": "टर्मिनल विभाजित करें",
+      "selectDefaultShell": "डिफ़ॉल्ट शेल चुनें"
     },
     "vs/workbench/contrib/scm/browser/scmViewlet": {
       "scm": "स्रोत नियंत्रण",
       "scm.viewlet": "स्रोत नियंत्रण",
       "hideRepository": "रिपॉज़िटरी छुपाएं",
-      "viewRepository": "रिपॉज़िटरी देखें"
+      "viewRepository": "रिपॉज़िटरी देखें",
+      "commit": "कमिट",
+      "commitMessage": "कमिट संदेश",
+      "changes": "परिवर्तन",
+      "stagedChanges": "स्टेज किए गए परिवर्तन"
     },
     "vs/workbench/contrib/extensions/browser/extensionsActions": {
       "installAction": "इंस्टॉल करें",
       "uninstallAction": "अनइंस्टॉल करें",
       "enableAction": "सक्षम करें",
-      "disableAction": "अक्षम करें"
+      "disableAction": "अक्षम करें",
+      "updateAction": "अपडेट करें",
+      "checkForUpdates": "अपडेट की जांच करें"
+    },
+    "vs/workbench/contrib/extensions/browser/extensionsViews": {
+      "extensions": "एक्सटेंशन",
+      "searchExtensions": "मार्केटप्लेस में एक्सटेंशन खोजें",
+      "installedExtensions": "इंस्टॉल किए गए",
+      "recommendedExtensions": "अनुशंसित",
+      "popularExtensions": "लोकप्रिय"
     },
     "vs/workbench/contrib/preferences/browser/preferences": {
       "openSettings": "सेटिंग्स खोलें",
-      "openKeybindings": "कीबोर्ड शॉर्टकट खोलें"
+      "openKeybindings": "कीबोर्ड शॉर्टकट खोलें",
+      "openUserSettings": "उपयोगकर्ता सेटिंग्स खोलें",
+      "openWorkspaceSettings": "वर्कस्पेस सेटिंग्स खोलें"
+    },
+    "vs/workbench/contrib/preferences/browser/settingsEditor2": {
+      "searchSettings": "खोज सेटिंग्स",
+      "modifiedSettings": "संशोधित सेटिंग्स",
+      "clearSearchResults": "खोज परिणाम साफ़ करें"
+    },
+    "vs/workbench/contrib/tasks/browser/task": {
+      "runTask": "कार्य चलाएं",
+      "configureTasks": "कार्यों को कॉन्फ़िगर करें",
+      "taskProblemsTitle": "कार्य समस्याएं"
+    },
+    "vs/workbench/contrib/markers/browser/markers": {
+      "problems.view.title": "समस्याएं",
+      "problems.view.empty": "कोई समस्या नहीं मिली",
+      "markers.panel.filter.placeholder": "फ़िल्टर समस्याएं"
     },
     "vs/workbench/services/editor/common/editorService": {
       "compareLabels": "{0} ↔ {1}"
     },
-    "vs/base/common": {
-      "ok": "ठीक है",
-      "cancel": "रद्द करें",
-      "yes": "हाँ",
-      "no": "नहीं",
-      "open": "खोलें",
-      "close": "बंद करें",
-      "save": "सहेजें",
-      "discard": "त्यागें",
-      "dontSave": "सहेजें नहीं"
+    "vs/workbench/browser/parts/views/viewPaneContainer": {
+      "hideView": "दृश्य छुपाएं",
+      "resetView": "दृश्य रीसेट करें"
+    },
+    "vs/workbench/services/textfile/common/textfiles": {
+      "saveChangesMessage": "क्या आप {0} में अपने परिवर्तनों को सहेजना चाहते हैं?",
+      "saveChangesMessages": "क्या आप इन {0} फ़ाइलों में परिवर्तनों को सहेजना चाहते हैं?"
+    },
+    "vs/workbench/services/configuration/common/configuration": {
+      "defaultSettings": "डिफ़ॉल्ट सेटिंग्स",
+      "userSettings": "उपयोगकर्ता सेटिंग्स",
+      "workspaceSettings": "वर्कस्पेस सेटिंग्स"
+    },
+    "vs/workbench/services/commands/common/commandService": {
+      "commandNotFound": "कमांड '{0}' नहीं मिली"
     }
   }
 }

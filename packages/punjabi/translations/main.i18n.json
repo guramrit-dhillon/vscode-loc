@@ -8,6 +8,12 @@
   ],
   "version": "1.0.0",
   "contents": {
+    "vs/base/browser/ui/actionbar/actionViewItems": {
+      "titleLabel": "{0} ({1})"
+    },
+    "vs/base/browser/ui/button/button": {
+      "button dropdown more actions": "ਹੋਰ ਕਾਰਵਾਈਆਂ..."
+    },
     "vs/base/browser/ui/dialog/dialog": {
       "dialogClose": "ਡਾਇਲੌਗ ਬੰਦ ਕਰੋ",
       "dialogErrorMessage": "ਗਲਤੀ",
@@ -16,37 +22,115 @@
       "dialogWarningMessage": "ਚੇਤਾਵਨੀ",
       "ok": "ਠੀਕ ਹੈ"
     },
+    "vs/base/browser/ui/dropdown/dropdownActionViewItem": {
+      "moreActions": "ਹੋਰ ਕਾਰਵਾਈਆਂ..."
+    },
+    "vs/base/browser/ui/findinput/findInput": {
+      "defaultLabel": "ਇਨਪੁੱਟ"
+    },
     "vs/base/browser/ui/findinput/findInputToggles": {
       "caseDescription": "ਕੇਸ ਦਾ ਮਿਲਾਨ ਕਰੋ",
       "regexDescription": "ਰੈਗੂਲਰ ਐਕਸਪ੍ਰੈਸ਼ਨ ਵਰਤੋ",
       "wordsDescription": "ਪੂਰਾ ਸ਼ਬਦ"
     },
+    "vs/base/browser/ui/findinput/replaceInput": {
+      "defaultLabel": "ਇਨਪੁੱਟ",
+      "label.preserveCaseToggle": "ਕੇਸ ਬਰਕਰਾਰ ਰੱਖੋ"
+    },
+    "vs/base/browser/ui/hover/hoverWidget": {
+      "acessibleViewHint": "{0} ਨਾਲ ਪਹੁੰਚਯੋਗ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਇਸਦੀ ਜਾਂਚ ਕਰੋ।",
+      "acessibleViewHintNoKbOpen": "ਓਪਨ ਐਕਸੇਸੀਬਲ ਵਿਊ ਕਮਾਂਡ ਦੁਆਰਾ ਪਹੁੰਚਯੋਗ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਇਸਦੀ ਜਾਂਚ ਕਰੋ।"
+    },
     "vs/base/browser/ui/inputbox/inputBox": {
       "alertErrorMessage": "ਗਲਤੀ: {0}",
       "alertInfoMessage": "ਜਾਣਕਾਰੀ: {0}",
-      "alertWarningMessage": "ਚੇਤਾਵਨੀ: {0}"
+      "alertWarningMessage": "ਚੇਤਾਵਨੀ: {0}",
+      "clearedInput": "ਇਨਪੁੱਟ ਸਾਫ਼ ਕੀਤੀ ਗਈ"
     },
     "vs/base/browser/ui/keybindingLabel/keybindingLabel": {
       "unbound": "ਅਣਬੰਨਿਆ"
     },
+    "vs/base/browser/ui/menu/menubar": {
+      "mAppMenu": "ਐਪਲੀਕੇਸ਼ਨ ਮੀਨੂ",
+      "mMore": "ਹੋਰ"
+    },
+    "vs/base/browser/ui/selectBox/selectBoxCustom": {
+      "selectBox": "ਚੋਣ ਬਾਕਸ"
+    },
+    "vs/base/browser/ui/splitview/paneview": {
+      "viewSection": "ਸੈਕਸ਼ਨ {0}"
+    },
+    "vs/base/browser/ui/toolbar/toolbar": {
+      "moreActions": "ਹੋਰ ਕਾਰਵਾਈਆਂ..."
+    },
     "vs/base/browser/ui/tree/abstractTree": {
       "close": "ਬੰਦ ਕਰੋ",
       "filter": "ਫਿਲਟਰ",
+      "foundResults": "{0} ਨਤੀਜੇ",
       "fuzzySearch": "ਫਜ਼ੀ ਮੈਚਿੰਗ",
       "not found": "ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਮਿਲੇ।",
+      "type to filter": "ਫਿਲਟਰ ਕਰਨ ਲਈ ਟਾਈਪ ਕਰੋ",
       "type to search": "ਖੋਜਣ ਲਈ ਟਾਈਪ ਕਰੋ"
     },
     "vs/base/common/actions": {
       "submenu.empty": "(ਖਾਲੀ)"
     },
+    "vs/base/common/date": {
+      "date.fromNow.days.plural": "{0} ਦਿਨ",
+      "date.fromNow.days.plural.ago": "{0} ਦਿਨ ਪਹਿਲਾਂ",
+      "date.fromNow.hours.plural": "{0} ਘੰਟੇ",
+      "date.fromNow.hours.plural.ago": "{0} ਘੰਟੇ ਪਹਿਲਾਂ",
+      "date.fromNow.minutes.plural": "{0} ਮਿੰਟ",
+      "date.fromNow.minutes.plural.ago": "{0} ਮਿੰਟ ਪਹਿਲਾਂ",
+      "date.fromNow.months.plural": "{0} ਮਹੀਨੇ",
+      "date.fromNow.months.plural.ago": "{0} ਮਹੀਨੇ ਪਹਿਲਾਂ",
+      "date.fromNow.now": "ਹੁਣ",
+      "date.fromNow.seconds.plural": "{0} ਸਕਿੰਟ",
+      "date.fromNow.seconds.plural.ago": "{0} ਸਕਿੰਟ ਪਹਿਲਾਂ",
+      "date.fromNow.weeks.plural": "{0} ਹਫ਼ਤੇ",
+      "date.fromNow.weeks.plural.ago": "{0} ਹਫ਼ਤੇ ਪਹਿਲਾਂ",
+      "date.fromNow.years.plural": "{0} ਸਾਲ",
+      "date.fromNow.years.plural.ago": "{0} ਸਾਲ ਪਹਿਲਾਂ",
+      "today": "ਅੱਜ",
+      "yesterday": "ਕੱਲ੍ਹ"
+    },
     "vs/base/common/errorMessage": {
-      "error.defaultMessage": "ਇੱਕ ਅਣਜਾਣ ਗਲਤੀ ਹੋਈ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਵਧੇਰੇ ਵੇਰਵੇ ਲਈ ਲੌਗ ਦੇਖੋ।"
+      "error.defaultMessage": "ਇੱਕ ਅਣਜਾਣ ਗਲਤੀ ਹੋਈ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਵਧੇਰੇ ਵੇਰਵੇ ਲਈ ਲੌਗ ਦੇਖੋ।",
+      "error.moreErrors": "{0} ({1} ਕੁੱਲ ਗਲਤੀਆਂ)",
+      "nodeExceptionMessage": "ਇੱਕ ਸਿਸਟਮ ਗਲਤੀ ਹੋਈ ({0})",
+      "stackTrace.format": "{0}: {1}"
+    },
+    "vs/base/common/jsonErrorMessages": {
+      "error.closeBraceExpected": "ਬੰਦ ਬਰੇਸ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.closeBracketExpected": "ਬੰਦ ਬਰੈਕੇਟ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.colonExpected": "ਕੋਲਨ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.commaExpected": "ਕੌਮਾ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.endOfFileExpected": "ਫਾਈਲ ਦੇ ਅੰਤ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.invalidNumberFormat": "ਅਵੈਧ ਨੰਬਰ ਫਾਰਮੈਟ",
+      "error.invalidSymbol": "ਅਵੈਧ ਪ੍ਰਤੀਕ",
+      "error.propertyNameExpected": "ਪ੍ਰਾਪਰਟੀ ਨਾਮ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ",
+      "error.valueExpected": "ਮੁੱਲ ਦੀ ਉਮੀਦ ਕੀਤੀ ਗਈ"
     },
     "vs/base/common/keybindingLabels": {
+      "altKey": "Alt",
       "ctrlKey": "Ctrl",
       "shiftKey": "Shift",
-      "altKey": "Alt",
-      "cmdKey": "Cmd"
+      "cmdKey": "Cmd",
+      "windowsKey": "Windows",
+      "superKey": "Super"
+    },
+    "vs/base/common": {
+      "ok": "ਠੀਕ ਹੈ",
+      "cancel": "ਰੱਦ ਕਰੋ",
+      "yes": "ਹਾਂ",
+      "no": "ਨਹੀਂ",
+      "open": "ਖੋਲ੍ਹੋ",
+      "close": "ਬੰਦ ਕਰੋ",
+      "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+      "discard": "ਰੱਦ ਕਰੋ",
+      "dontSave": "ਸੁਰੱਖਿਅਤ ਨਾ ਕਰੋ",
+      "apply": "ਲਾਗੂ ਕਰੋ",
+      "help": "ਸਹਾਇਤਾ"
     },
     "vs/editor/browser/controller/textAreaHandler": {
       "accessibilityOffAriaLabel": "ਸੰਪਾਦਕ ਹੁਣ ਪਹੁੰਚਯੋਗ ਨਹੀਂ ਹੈ। Alt+F1 ਨੂੰ ਵਿਕਲਪਾਂ ਲਈ ਦਬਾਓ।"
@@ -55,13 +139,23 @@
       "editorViewAccessibleLabel": "ਸੰਪਾਦਕ ਸਮੱਗਰੀ",
       "accessibilityHelpMessage": "ਪਹੁੰਚਯੋਗਤਾ ਸਹਾਇਤਾ ਲਈ Alt+F1 ਦਬਾਓ।"
     },
+    "vs/editor/browser/widget/diffEditor/diffEditorWidget": {
+      "diff.clipboard.copyDeletedLineContent.label": "ਮਿਟਾਈ ਗਈ ਲਾਈਨ ਕਾਪੀ ਕਰੋ",
+      "diff.clipboard.copyDeletedLinesContent.label": "ਮਿਟਾਈਆਂ ਗਈਆਂ ਲਾਈਨਾਂ ਕਾਪੀ ਕਰੋ"
+    },
     "vs/editor/common/config/editorOptions": {
       "accessibilitySupport.auto": "ਪਲੇਟਫਾਰਮ API ਦੀ ਵਰਤੋਂ ਕਰੋ ਇਹ ਪਤਾ ਲਗਾਉਣ ਲਈ ਕਿ ਕੀ ਸਕਰੀਨ ਰੀਡਰ ਜੁੜਿਆ ਹੋਇਆ ਹੈ",
       "accessibilitySupport.off": "ਮੰਨ ਲਓ ਕਿ ਸਕਰੀਨ ਰੀਡਰ ਜੁੜਿਆ ਨਹੀਂ ਹੈ",
       "accessibilitySupport.on": "ਸਕਰੀਨ ਰੀਡਰ ਦੀ ਵਰਤੋਂ ਲਈ ਅਨੁਕੂਲਿਤ ਕਰੋ",
+      "autoClosingBrackets": "ਜਦੋਂ ਉਪਭੋਗਤਾ ਓਪਨਿੰਗ ਬਰੈਕੇਟ ਜੋੜਦਾ ਹੈ ਤਾਂ ਸੰਪਾਦਕ ਆਪਣੇ ਆਪ ਬਾਅਦ ਦੇ ਬਰੈਕੇਟਾਂ ਨੂੰ ਬੰਦ ਕਰੇਗਾ ਜਾਂ ਨਹੀਂ ਇਸ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
+      "autoClosingQuotes": "ਜਦੋਂ ਉਪਭੋਗਤਾ ਓਪਨਿੰਗ ਕੋਟ ਜੋੜਦਾ ਹੈ ਤਾਂ ਸੰਪਾਦਕ ਆਪਣੇ ਆਪ ਬਾਅਦ ਦੇ ਕੋਟਸ ਨੂੰ ਬੰਦ ਕਰੇਗਾ ਜਾਂ ਨਹੀਂ ਇਸ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
       "fontFamily": "ਫੌਂਟ ਫੈਮਿਲੀ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
       "fontSize": "ਫੌਂਟ ਆਕਾਰ ਪਿਕਸਲਾਂ ਵਿੱਚ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
-      "lineHeight": "ਲਾਈਨ ਦੀ ਉਚਾਈ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।"
+      "lineHeight": "ਲਾਈਨ ਦੀ ਉਚਾਈ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
+      "lineNumbers": "ਲਾਈਨ ਨੰਬਰਾਂ ਦੇ ਰੈਂਡਰਿੰਗ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
+      "renderWhitespace": "ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ ਕਿ ਸੰਪਾਦਕ ਵ੍ਹਾਈਟਸਪੇਸ ਅੱਖਰਾਂ ਨੂੰ ਕਿਵੇਂ ਰੈਂਡਰ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ।",
+      "tabSize": "ਇੱਕ ਟੈਬ ਦੇ ਬਰਾਬਰ ਸਪੇਸਾਂ ਦੀ ਗਿਣਤੀ।",
+      "wordWrap": "ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ ਕਿ ਲਾਈਨਾਂ ਨੂੰ ਕਿਵੇਂ ਲਪੇਟਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
     },
     "vs/editor/contrib/find/browser/findWidget": {
       "label.find": "ਲੱਭੋ",
@@ -75,11 +169,31 @@
       "label.replaceButton": "ਬਦਲੋ",
       "label.replaceAllButton": "ਸਾਰੇ ਬਦਲੋ",
       "label.toggleReplaceButton": "ਬਦਲਣ ਨੂੰ ਟੌਗਲ ਕਰੋ",
-      "title.matchesCountLimit": "ਸਿਰਫ਼ ਪਹਿਲੇ {0} ਨਤੀਜੇ ਹਾਈਲਾਈਟ ਕੀਤੇ ਗਏ ਹਨ, ਪਰ ਸਾਰੇ ਲੱਭੋ ਅਤੇ ਬਦਲੋ ਕਾਰਜ ਸਾਰੇ ਨਤੀਜਿਆਂ 'ਤੇ ਕੰਮ ਕਰਦੇ ਹਨ।"
+      "title.matchesCountLimit": "ਸਿਰਫ਼ ਪਹਿਲੇ {0} ਨਤੀਜੇ ਹਾਈਲਾਈਟ ਕੀਤੇ ਗਏ ਹਨ, ਪਰ ਸਾਰੇ ਲੱਭੋ ਅਤੇ ਬਦਲੋ ਕਾਰਜ ਸਾਰੇ ਨਤੀਜਿਆਂ 'ਤੇ ਕੰਮ ਕਰਦੇ ਹਨ।",
+      "title.matchesCount": "{0} ਦੀ {1}",
+      "title.noResults": "ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ"
     },
     "vs/editor/contrib/gotoError/browser/gotoError": {
       "markers.panel.title.problems": "ਸਮੱਸਿਆਵਾਂ",
-      "problems.title": "{0} ਦੀ {1}"
+      "problems.title": "{0} ਦੀ {1}",
+      "nextMarkerAction": "ਅਗਲੀ ਸਮੱਸਿਆ ਤੇ ਜਾਓ",
+      "previousMarkerAction": "ਪਿਛਲੀ ਸਮੱਸਿਆ ਤੇ ਜਾਓ"
+    },
+    "vs/editor/contrib/comment/browser/comment": {
+      "comment.line": "ਲਾਈਨ ਕਮੈਂਟ ਟੌਗਲ ਕਰੋ",
+      "comment.block": "ਬਲਾਕ ਕਮੈਂਟ ਟੌਗਲ ਕਰੋ"
+    },
+    "vs/editor/contrib/folding/browser/folding": {
+      "unfoldAction.label": "ਖੋਲ੍ਹੋ",
+      "unFoldRecursivelyAction.label": "ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ",
+      "foldAction.label": "ਮੋੜੋ",
+      "foldRecursivelyAction.label": "ਦੁਬਾਰਾ ਮੋੜੋ",
+      "foldAllAction.label": "ਸਾਰੇ ਮੋੜੋ",
+      "unfoldAllAction.label": "ਸਾਰੇ ਖੋਲ੍ਹੋ"
+    },
+    "vs/editor/contrib/format/browser/formatActions": {
+      "formatDocument.label": "ਦਸਤਾਵੇਜ਼ ਨੂੰ ਫਾਰਮੈਟ ਕਰੋ",
+      "formatSelection.label": "ਚੋਣ ਨੂੰ ਫਾਰਮੈਟ ਕਰੋ"
     },
     "vs/platform/actions/browser/menuEntryActionViewItem": {
       "titleAndKb": "{0} ({1})"
@@ -99,7 +213,15 @@
       "disabledForeground": "ਅਯੋਗ ਤੱਤਾਂ ਲਈ ਸਮੁੱਚਾ ਅਗਲਾ ਰੰਗ",
       "errorForeground": "ਗਲਤੀ ਸੰਦੇਸ਼ਾਂ ਲਈ ਸਮੁੱਚਾ ਅਗਲਾ ਰੰਗ",
       "descriptionForeground": "ਵਾਧੂ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਵਾਲੇ ਵਰਣਨ ਟੈਕਸਟ ਲਈ ਅਗਲਾ ਰੰਗ",
-      "iconForeground": "ਵਰਕਬੈਂਚ ਵਿੱਚ ਆਈਕਾਨਾਂ ਲਈ ਡਿਫੌਲਟ ਰੰਗ"
+      "iconForeground": "ਵਰਕਬੈਂਚ ਵਿੱਚ ਆਈਕਾਨਾਂ ਲਈ ਡਿਫੌਲਟ ਰੰਗ",
+      "focusBorder": "ਫੋਕਸ ਕੀਤੇ ਤੱਤਾਂ ਲਈ ਸਮੁੱਚੀ ਬਾਰਡਰ ਰੰਗ",
+      "contrastBorder": "ਵਾਧੂ ਕੰਟਰਾਸਟ ਲਈ ਤੱਤਾਂ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਬਾਰਡਰ",
+      "contrastActiveBorder": "ਵਾਧੂ ਕੰਟਰਾਸਟ ਲਈ ਸਰਗਰਮ ਤੱਤਾਂ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਬਾਰਡਰ"
+    },
+    "vs/platform/notification/common/notification": {
+      "infoNotification": "ਜਾਣਕਾਰੀ",
+      "warnNotification": "ਚੇਤਾਵਨੀ",
+      "errorNotification": "ਗਲਤੀ"
     },
     "vs/workbench/browser/parts/editor/editorActions": {
       "splitEditor": "ਸੰਪਾਦਕ ਨੂੰ ਵੰਡੋ",
@@ -108,13 +230,20 @@
       "splitEditorLeft": "ਖੱਬੇ ਸੰਪਾਦਕ ਵੰਡੋ",
       "splitEditorRight": "ਸੱਜੇ ਸੰਪਾਦਕ ਵੰਡੋ",
       "moveEditorToNextGroup": "ਸੰਪਾਦਕ ਨੂੰ ਅਗਲੇ ਗਰੁੱਪ ਵਿੱਚ ਭੇਜੋ",
-      "moveEditorToPreviousGroup": "ਸੰਪਾਦਕ ਨੂੰ ਪਿਛਲੇ ਗਰੁੱਪ ਵਿੱਚ ਭੇਜੋ"
+      "moveEditorToPreviousGroup": "ਸੰਪਾਦਕ ਨੂੰ ਪਿਛਲੇ ਗਰੁੱਪ ਵਿੱਚ ਭੇਜੋ",
+      "moveActiveEditor": "ਸਰਗਰਮ ਸੰਪਾਦਕ ਨੂੰ ਭੇਜੋ",
+      "closeEditor": "ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ",
+      "closeAllEditors": "ਸਾਰੇ ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ",
+      "closeOtherEditors": "ਹੋਰ ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ"
     },
     "vs/workbench/browser/parts/editor/editorStatus": {
       "singleSelectionRange": "ਲਾਈਨ {0}, ਕਾਲਮ {1} ({2} ਚੁਣਿਆ)",
       "singleSelection": "ਲਾਈਨ {0}, ਕਾਲਮ {1}",
       "multiSelectionRange": "{0} ਚੋਣਾਂ ({1} ਅੱਖਰ ਚੁਣੇ)",
-      "multiSelection": "{0} ਚੋਣਾਂ"
+      "multiSelection": "{0} ਚੋਣਾਂ",
+      "changeLangMode": "ਭਾਸ਼ਾ ਮੋਡ ਬਦਲੋ",
+      "changeEncoding": "ਏਨਕੋਡਿੰਗ ਬਦਲੋ",
+      "changeEOL": "ਲਾਈਨ ਐਂਡਿੰਗ ਸੀਕੁਏਂਸ ਬਦਲੋ"
     },
     "vs/workbench/browser/parts/activitybar/activitybarActions": {
       "toggleActivityBar": "ਐਕਟੀਵਿਟੀ ਬਾਰ ਦੀ ਦ੍ਰਿਸ਼ਟਾ ਟੌਗਲ ਕਰੋ"
@@ -122,8 +251,23 @@
     "vs/workbench/browser/parts/titlebar/titlebarActions": {
       "toggleMenuBar": "ਮੀਨੂ ਬਾਰ ਟੌਗਲ ਕਰੋ"
     },
+    "vs/workbench/browser/parts/editor": {
+      "saveButton": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+      "closeButton": "ਬੰਦ ਕਰੋ",
+      "editorPane": "ਸੰਪਾਦਕ ਪੈਨ"
+    },
     "vs/workbench/contrib/debug/browser/debugActionViewItems": {
       "debugToolBarBackground": "ਡੀਬੱਗ ਟੂਲਬਾਰ ਬੈਕਗਰਾਊਂਡ ਰੰਗ"
+    },
+    "vs/workbench/contrib/debug/browser/debugActions": {
+      "startDebug": "ਡੀਬਗਿੰਗ ਸ਼ੁਰੂ ਕਰੋ",
+      "stopDebug": "ਡੀਬਗਿੰਗ ਰੋਕੋ",
+      "restartDebug": "ਡੀਬਗਿੰਗ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ",
+      "stepOver": "ਸਟੇਪ ਓਵਰ",
+      "stepInto": "ਸਟੇਪ ਇਨਟੂ",
+      "stepOut": "ਸਟੇਪ ਆਊਟ",
+      "continueDebug": "ਜਾਰੀ ਰੱਖੋ",
+      "pauseDebug": "ਰੋਕੋ"
     },
     "vs/workbench/contrib/debug/browser/debugService": {
       "snapshotObj": "ਸਿਰਫ਼ ਪਰਿਮਿਤ ਜਾਣਕਾਰੀ ਇੱਕ ਵੱਡੇ ਆਬਜੈਕਟ ਲਈ ਉਪਲਬਧ ਹੈ"
@@ -135,17 +279,24 @@
       "saveAll": "ਸਾਰੀਆਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
       "compareWithSaved": "ਸੁਰੱਖਿਅਤ ਨਾਲ ਤੁਲਨਾ ਕਰੋ",
       "close": "ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ",
-      "closeAll": "ਸਾਰੇ ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ"
+      "closeAll": "ਸਾਰੇ ਸੰਪਾਦਕ ਬੰਦ ਕਰੋ",
+      "copyPath": "ਪਾਥ ਕਾਪੀ ਕਰੋ",
+      "copyRelativePath": "ਰਿਲੇਟਿਵ ਪਾਥ ਕਾਪੀ ਕਰੋ",
+      "revealInExplorer": "ਐਕਸਪਲੋਰਰ ਵਿੱਚ ਪ੍ਰਗਟ ਕਰੋ",
+      "openContainingFolder": "ਸਮਾਵੇਸ਼ ਫੋਲਡਰ ਖੋਲ੍ਹੋ"
     },
     "vs/workbench/contrib/files/browser/fileCommands": {
       "openFileFolder": "ਖੋਲ੍ਹੋ...",
       "saveAs": "ਇਸ ਤਰ੍ਹਾਂ ਸੁਰੱਖਿਅਤ ਕਰੋ...",
-      "openWorkspace": "ਵਰਕਸਪੇਸ ਖੋਲ੍ਹੋ..."
+      "openWorkspace": "ਵਰਕਸਪੇਸ ਖੋਲ੍ਹੋ...",
+      "saveWorkspaceAs": "ਵਰਕਸਪੇਸ ਇਸ ਤਰ੍ਹਾਂ ਸੁਰੱਖਿਅਤ ਕਰੋ..."
     },
     "vs/workbench/contrib/files/browser/views/explorerViewer": {
       "confirmDelete": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ '{0}' ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
       "confirmDeleteMultiple": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਇਹਨਾਂ {0} ਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
-      "deleteButtonLabel": "ਮਿਟਾਓ"
+      "deleteButtonLabel": "ਮਿਟਾਓ",
+      "confirmMoveTrashMessage": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ '{0}' ਨੂੰ ਰੱਦੀ ਵਿੱਚ ਭੇਜਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
+      "confirmMoveTrashMessageMultiple": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਇਹਨਾਂ {0} ਫਾਈਲਾਂ ਨੂੰ ਰੱਦੀ ਵਿੱਚ ਭੇਜਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
     },
     "vs/workbench/contrib/welcome/gettingStarted": {
       "gettingStarted.welcome": "ਸੁਆਗਤ ਹੈ",
@@ -158,51 +309,90 @@
       "openEditorsTitle": "ਖੁੱਲੇ ਸੰਪਾਦਕ",
       "explorerSection": "ਫਾਈਲਾਂ ਐਕਸਪਲੋਰਰ ਸੈਕਸ਼ਨ"
     },
-    "vs/workbench/browser/parts/editor": {
-      "saveButton": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
-      "closeButton": "ਬੰਦ ਕਰੋ",
-      "editorPane": "ਸੰਪਾਦਕ ਪੈਨ"
-    },
     "vs/workbench/contrib/search/browser/searchView": {
       "search": "ਖੋਜੋ",
       "replaceInFiles": "ਫਾਈਲਾਂ ਵਿੱਚ ਬਦਲੋ",
-      "searchResultsLabel": "{0} ਵਿੱਚ {1} ਨਤੀਜੇ"
+      "searchResultsLabel": "{0} ਵਿੱਚ {1} ਨਤੀਜੇ",
+      "searchWithoutFolderMessage": "ਖੋਜਣ ਲਈ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਇੱਕ ਫੋਲਡਰ ਖੋਲ੍ਹਣ ਦੀ ਲੋੜ ਹੈ",
+      "searchMaxResults": "ਇਹ ਸਿਰਫ਼ ਪਹਿਲੇ {0} ਨਤੀਜੇ ਹਨ। ਸਾਰੇ ਨਤੀਜੇ ਦੇਖਣ ਲਈ ਆਪਣੀ ਖੋਜ ਨੂੰ ਸੰਕੀਰਣ ਕਰੋ।"
+    },
+    "vs/workbench/contrib/output/browser/output": {
+      "output": "ਆਉਟਪੁੱਟ",
+      "clearOutput.label": "ਆਉਟਪੁੱਟ ਸਾਫ਼ ਕਰੋ"
     },
     "vs/workbench/contrib/terminal/browser/terminal": {
       "terminal": "ਟਰਮੀਨਲ",
       "newTerminal": "ਨਵਾਂ ਟਰਮੀਨਲ",
       "killTerminal": "ਸਰਗਰਮ ਟਰਮੀਨਲ ਉਦਾਹਰਣ ਨੂੰ ਖਤਮ ਕਰੋ",
-      "toggleTerminal": "ਟਰਮੀਨਲ ਟੌਗਲ ਕਰੋ"
+      "toggleTerminal": "ਟਰਮੀਨਲ ਟੌਗਲ ਕਰੋ",
+      "clear": "ਸਾਫ਼ ਕਰੋ",
+      "split": "ਟਰਮੀਨਲ ਵੰਡੋ",
+      "selectDefaultShell": "ਡਿਫੌਲਟ ਸ਼ੈੱਲ ਚੁਣੋ"
     },
     "vs/workbench/contrib/scm/browser/scmViewlet": {
       "scm": "ਸਰੋਤ ਨਿਯੰਤਰਣ",
       "scm.viewlet": "ਸਰੋਤ ਨਿਯੰਤਰਣ",
       "hideRepository": "ਰਿਪੋਜ਼ਟਰੀ ਲੁਕਾਓ",
-      "viewRepository": "ਰਿਪੋਜ਼ਟਰੀ ਦੇਖੋ"
+      "viewRepository": "ਰਿਪੋਜ਼ਟਰੀ ਦੇਖੋ",
+      "commit": "ਕਮਿਟ",
+      "commitMessage": "ਕਮਿਟ ਸੰਦੇਸ਼",
+      "changes": "ਤਬਦੀਲੀਆਂ",
+      "stagedChanges": "ਸਟੇਜ ਕੀਤੀਆਂ ਤਬਦੀਲੀਆਂ"
     },
     "vs/workbench/contrib/extensions/browser/extensionsActions": {
       "installAction": "ਸਥਾਪਿਤ ਕਰੋ",
       "uninstallAction": "ਅਣਸਥਾਪਿਤ ਕਰੋ",
       "enableAction": "ਸਮਰੱਥ ਕਰੋ",
-      "disableAction": "ਅਸਮਰੱਥ ਕਰੋ"
+      "disableAction": "ਅਸਮਰੱਥ ਕਰੋ",
+      "updateAction": "ਅੱਪਡੇਟ ਕਰੋ",
+      "checkForUpdates": "ਅੱਪਡੇਟਾਂ ਦੀ ਜਾਂਚ ਕਰੋ"
+    },
+    "vs/workbench/contrib/extensions/browser/extensionsViews": {
+      "extensions": "ਐਕਸਟੈਂਸ਼ਨਾਂ",
+      "searchExtensions": "ਮਾਰਕੀਟਪਲੇਸ ਵਿੱਚ ਐਕਸਟੈਂਸ਼ਨਾਂ ਖੋਜੋ",
+      "installedExtensions": "ਸਥਾਪਿਤ",
+      "recommendedExtensions": "ਸਿਫਾਰਿਸ਼ੀ",
+      "popularExtensions": "ਪ੍ਰਸਿੱਧ"
     },
     "vs/workbench/contrib/preferences/browser/preferences": {
       "openSettings": "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
-      "openKeybindings": "ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟਾਂ ਖੋਲ੍ਹੋ"
+      "openKeybindings": "ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟਾਂ ਖੋਲ੍ਹੋ",
+      "openUserSettings": "ਉਪਭੋਗਤਾ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
+      "openWorkspaceSettings": "ਵਰਕਸਪੇਸ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ"
+    },
+    "vs/workbench/contrib/preferences/browser/settingsEditor2": {
+      "searchSettings": "ਖੋਜ ਸੈਟਿੰਗਾਂ",
+      "modifiedSettings": "ਸੋਧੀਆਂ ਗਈਆਂ ਸੈਟਿੰਗਾਂ",
+      "clearSearchResults": "ਖੋਜ ਨਤੀਜੇ ਸਾਫ਼ ਕਰੋ"
+    },
+    "vs/workbench/contrib/tasks/browser/task": {
+      "runTask": "ਕਾਰਜ ਚਲਾਓ",
+      "configureTasks": "ਕਾਰਜਾਂ ਨੂੰ ਕੌਂਫਿਗਰ ਕਰੋ",
+      "taskProblemsTitle": "ਕਾਰਜ ਸਮੱਸਿਆਵਾਂ"
+    },
+    "vs/workbench/contrib/markers/browser/markers": {
+      "problems.view.title": "ਸਮੱਸਿਆਵਾਂ",
+      "problems.view.empty": "ਕੋਈ ਸਮੱਸਿਆ ਨਹੀਂ ਮਿਲੀ",
+      "markers.panel.filter.placeholder": "ਫਿਲਟਰ ਸਮੱਸਿਆਵਾਂ"
     },
     "vs/workbench/services/editor/common/editorService": {
       "compareLabels": "{0} ↔ {1}"
     },
-    "vs/base/common": {
-      "ok": "ਠੀਕ ਹੈ",
-      "cancel": "ਰੱਦ ਕਰੋ",
-      "yes": "ਹਾਂ",
-      "no": "ਨਹੀਂ",
-      "open": "ਖੋਲ੍ਹੋ",
-      "close": "ਬੰਦ ਕਰੋ",
-      "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
-      "discard": "ਰੱਦ ਕਰੋ",
-      "dontSave": "ਸੁਰੱਖਿਅਤ ਨਾ ਕਰੋ"
+    "vs/workbench/browser/parts/views/viewPaneContainer": {
+      "hideView": "ਦ੍ਰਿਸ਼ ਲੁਕਾਓ",
+      "resetView": "ਦ੍ਰਿਸ਼ ਰੀਸੈਟ ਕਰੋ"
+    },
+    "vs/workbench/services/textfile/common/textfiles": {
+      "saveChangesMessage": "ਕੀ ਤੁਸੀਂ {0} ਵਿੱਚ ਆਪਣੀਆਂ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+      "saveChangesMessages": "ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ {0} ਫਾਈਲਾਂ ਵਿੱਚ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+    },
+    "vs/workbench/services/configuration/common/configuration": {
+      "defaultSettings": "ਡਿਫੌਲਟ ਸੈਟਿੰਗਾਂ",
+      "userSettings": "ਉਪਭੋਗਤਾ ਸੈਟਿੰਗਾਂ",
+      "workspaceSettings": "ਵਰਕਸਪੇਸ ਸੈਟਿੰਗਾਂ"
+    },
+    "vs/workbench/services/commands/common/commandService": {
+      "commandNotFound": "ਕਮਾਂਡ '{0}' ਨਹੀਂ ਮਿਲੀ"
     }
   }
 }
