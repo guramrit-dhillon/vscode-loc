@@ -2,7 +2,7 @@
   "name": "vscode-loc-hindi",
   "displayName": "Hindi Language Pack for VS Code",
   "description": "Language Pack for Hindi (हिन्दी) - provides localized UI for VS Code",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "publisher": "gdhillon",
   "icon": "icon.png",
   "engines": {

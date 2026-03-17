@@ -1,6 +1,6 @@
 {
   "name": "@vscode-loc/indian-languages",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "VSCode language extensions for Indian languages (Punjabi, Hindi)",
   "private": true,
   "workspaces": [
