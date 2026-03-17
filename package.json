@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "build:punjabi": "npm run build -w @vscode-loc/punjabi",
-    "build:hindi": "npm run build -w @vscode-loc/hindi",
+    "build:punjabi": "npm run build -w vscode-loc-punjabi",
+    "build:hindi": "npm run build -w vscode-loc-hindi",
     "watch": "npm run watch --workspaces --if-present",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
@@ -25,6 +25,7 @@
     "@typescript-eslint/parser": "^6.19.0",
     "esbuild": "^0.19.11",
     "eslint": "^8.56.0",
+    "sharp": "^0.34.5",
     "typescript": "^5.3.3"
   },
   "engines": {
