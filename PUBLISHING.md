@@ -12,7 +12,7 @@ You need to create publisher accounts and access tokens for both marketplaces.
    - Go to https://marketplace.visualstudio.com/
    - Sign in with your Microsoft account
    - Go to https://marketplace.visualstudio.com/manage
-   - Create a new publisher with ID `vscode-loc` (or update package.json files with your publisher ID)
+   - Create a new publisher with ID `gdhillon` (or update package.json files with your publisher ID)
 
 2. **Generate Personal Access Token**
    - Go to https://dev.azure.com/
@@ -72,7 +72,7 @@ git push origin v1.0.1
 
 ## Publisher Name
 
-The `publisher` field in package.json is currently set to `vscode-loc`. Make sure to:
+The `publisher` field in package.json is currently set to `gdhillon`. Make sure to:
 
 1. Either create a publisher with this exact name on both marketplaces
 2. Or update the `publisher` field in both package.json files to match your actual publisher name

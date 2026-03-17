@@ -3,7 +3,7 @@
   "displayName": "Punjabi Language Pack for VS Code",
   "description": "Language Pack for Punjabi (ਪੰਜਾਬੀ) - provides localized UI for VS Code",
   "version": "1.0.0",
-  "publisher": "vscode-loc",
+  "publisher": "gdhillon",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.85.0"

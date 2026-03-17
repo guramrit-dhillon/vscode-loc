@@ -37,7 +37,7 @@ All extensions are now **fully marketplace-ready** with the following features:
 #### VSCode Marketplace
 1. Go to https://marketplace.visualstudio.com/
 2. Sign in with Microsoft account
-3. Create publisher with ID `vscode-loc` (or update package.json with your ID)
+3. Create publisher with ID `gdhillon` (or update package.json with your ID)
 4. Generate Personal Access Token:
    - Visit https://dev.azure.com/
    - Create token with Marketplace → Acquire + Manage permissions
