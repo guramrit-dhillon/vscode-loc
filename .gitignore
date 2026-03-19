@@ -107,6 +107,21 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
+# VSCode extension build outputs
+packages/*/dist/
+packages/*/out/
+*.vsix
+
+# Reference translation dumps (large, fetched from official repo)
+# Regenerate with: npm run translations:merge
+vscode_translations_*.json
+
+# Batch translation state (resumable job ID)
+.translate-batch-state.json
+
+# Package lock files (using workspaces)
+package-lock.json
+
 # Serverless directories
 .serverless/
 
