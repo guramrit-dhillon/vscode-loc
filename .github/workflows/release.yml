@@ -1,0 +1,173 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  detect-changes:
+    name: Detect changed extensions
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.changed.outputs.matrix }}
+      has_changes: ${{ steps.changed.outputs.has_changes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Compare versions against previous tag
+        id: changed
+        run: |
+          # Get the previous tag (second most recent)
+          PREV_TAG=$(git tag --sort=-version:refname | head -2 | tail -1)
+          echo "Previous tag: $PREV_TAG"
+
+          EXTENSIONS=()
+          for dir in \
+            packages/punjabi \
+            packages/hindi; do
+
+            ext=$(basename "$dir")
+
+            # Get version from previous tag (default 0.0.0 if package didn't exist)
+            OLD_VER=$(git show "${PREV_TAG}:${dir}/package.json" 2>/dev/null \
+              | node -p "JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).version" 2>/dev/null \
+              || echo "0.0.0")
+
+            NEW_VER=$(node -p "require('./${dir}/package.json').version")
+
+            echo "  $ext: $OLD_VER → $NEW_VER"
+            if [ "$OLD_VER" != "$NEW_VER" ]; then
+              EXTENSIONS+=("\"$ext\"")
+            fi
+          done
+
+          if [ ${#EXTENSIONS[@]} -eq 0 ]; then
+            echo "No extensions changed."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "matrix={\"extension\":[]}" >> "$GITHUB_OUTPUT"
+          else
+            JOINED=$(IFS=,; echo "${EXTENSIONS[*]}")
+            echo "Changed extensions: $JOINED"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            echo "matrix={\"extension\":[${JOINED}]}" >> "$GITHUB_OUTPUT"
+          fi
+
+  package:
+    name: Package VSIX (${{ matrix.extension }})
+    needs: detect-changes
+    if: needs.detect-changes.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm install -g @vscode/vsce
+
+      - name: Detect pre-release from tag
+        id: prerelease
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          if [[ "$TAG" == *-* ]]; then
+            echo "flag=--pre-release" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build extension
+        run: npm run build -w ${{ matrix.extension }}
+
+      - name: Package VSIX
+        run: vsce package -o ${{ matrix.extension }}.vsix ${{ steps.prerelease.outputs.flag }} --no-dependencies
+        working-directory: packages/${{ matrix.extension }}
+
+      - name: Upload VSIX
+        uses: actions/upload-artifact@v4
+        with:
+          name: vsix-${{ matrix.extension }}
+          path: packages/${{ matrix.extension }}/${{ matrix.extension }}.vsix
+
+  release:
+    name: Create Release
+    needs: package
+    if: always() && needs.package.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download all VSIX artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: vsix-*
+          merge-multiple: true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: "*.vsix"
+
+  publish:
+    name: Publish (${{ matrix.extension }})
+    needs: [detect-changes, package]
+    if: always() && needs.package.result == 'success' && startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
+    steps:
+      - name: Download VSIX
+        uses: actions/download-artifact@v4
+        with:
+          name: vsix-${{ matrix.extension }}
+
+      - name: Install vsce and ovsx
+        run: npm install -g @vscode/vsce ovsx
+
+      - name: Detect pre-release flag
+        id: prerelease
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          if [[ "$TAG" == *-* ]]; then
+            echo "flag=--pre-release" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to VS Code Marketplace
+        run: |
+          OUTPUT=$(vsce publish --packagePath ${{ matrix.extension }}.vsix ${{ steps.prerelease.outputs.flag }} 2>&1) && echo "$OUTPUT" || {
+            echo "$OUTPUT"
+            if echo "$OUTPUT" | grep -qiE "already been published|already exists|version.*exist"; then
+              echo "Version already published on Marketplace, skipping."
+            else
+              exit 1
+            fi
+          }
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish to Open VSX
+        run: |
+          OUTPUT=$(ovsx publish ${{ matrix.extension }}.vsix ${{ steps.prerelease.outputs.flag }} 2>&1) && echo "$OUTPUT" || {
+            echo "$OUTPUT"
+            if echo "$OUTPUT" | grep -qiE "already been published|already exists|version.*exist"; then
+              echo "Version already published on Open VSX, skipping."
+            else
+              exit 1
+            fi
+          }
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}

@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main, develop, claude/*]
+  pull_request:
+    branches: [master, main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+
+  package:
+    name: Package VSIX
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm install -g @vscode/vsce
+      - run: npm run build
+      - name: Package Punjabi
+        run: vsce package --no-dependencies
+        working-directory: packages/punjabi
+      - name: Package Hindi
+        run: vsce package --no-dependencies
+        working-directory: packages/hindi
+      - name: Verify VSIX files
+        run: find packages -name "*.vsix" -exec ls -lh {} \;
+      - name: Upload VSIX artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vsix-packages
+          path: packages/*/*.vsix
