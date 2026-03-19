@@ -34,7 +34,7 @@ import { readXLSX, writeXLSX } from './xlsx-utils.mjs';
 
 const __dirname  = dirname(fileURLToPath(import.meta.url));
 const ROOT       = resolve(__dirname, '..');
-const REFERENCES = resolve(ROOT, '..', 'references');
+const REFERENCES = resolve(ROOT, 'references');
 const XLSX_PATH  = join(REFERENCES, 'translations.xlsx');
 const STATE_PATH = join(ROOT, '.translate-batch-state.json');
 

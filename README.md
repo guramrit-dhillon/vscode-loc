@@ -69,12 +69,11 @@ npm run lint:fix
 ## Project Structure
 
 ```
-vscode-loc/                        ← git repo root
+vscode-loc/                        ← git repo root / monorepo root (npm workspaces)
 ├── references/
 │   ├── translations.xlsx          # Source-of-truth spreadsheet (all 18,500+ strings)
 │   ├── vscode_translations_fr.json  # Official VS Code French translation (reference)
 │   └── vscode_translations_zh.json  # Official VS Code Chinese translation (reference)
-└── vscode-loc/                    ← monorepo root (npm workspaces)
     ├── .changeset/                # Changeset version management
     ├── .github/
     │   └── workflows/

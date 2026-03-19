@@ -29,7 +29,7 @@ import { readXLSX, writeXLSX } from './xlsx-utils.mjs';
 const require = createRequire(import.meta.url);
 const __dirname  = dirname(fileURLToPath(import.meta.url));
 const ROOT       = resolve(__dirname, '..');
-const REFERENCES = resolve(ROOT, '..', 'references');
+const REFERENCES = resolve(ROOT, 'references');
 const XLSX_PATH  = join(REFERENCES, 'translations.xlsx');
 
 // ─── CLI args ─────────────────────────────────────────────────────────────────
